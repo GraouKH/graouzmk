@@ -1026,7 +1026,7 @@
 
 
         // k ù
-        sk: skb {
+        sk2: skb {
             compatible = "zmk,behavior-mod-morph";
             label = "K_SHIFT";
             #binding-cells = <0>;
@@ -1046,7 +1046,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "K";
             #binding-cells = <0>;
-            bindings = <&sk>, <&ak>;
+            bindings = <&sk2>, <&ak>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 

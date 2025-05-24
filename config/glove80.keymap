@@ -1306,7 +1306,7 @@
             label = "A_ACCUTE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <0>;
+            wait-ms = <300>;
             tap-ms = <0>;
             bindings
             = <&macro_press   &kp LALT>
@@ -1818,7 +1818,7 @@
 
             bindings = <
             &kp F1         &kp F2   &kp F3      &kp F4      &kp F5                                                                                         &kp F6  &kp F7      &kp F8      &kp F9      &kp F10
-            &ghash         &gamps   &glbkt      &glbrc      &grbrc      &glpar                                                                     &gequal &gstar  &glpar      &gplus      &grbkt      &gexcl
+            &ghash         &gamps   &glbkt      &glbrc      &grbrc      &glpar                                                                     &gequal &gstar  &grpar      &gplus      &grbkt      &gexcl
             &kp TAB        &gsemi   &gcomma     &gdot       &gp         &gy                                                                        &gf     &gg     &gc         &gr         &gl         &gbslh
             &kp ESC        &ga      &go         &ge         &gu         &gi                                                                        &gd     &gh     &gt         &gn         &gs         &gminus
             &gdllr         &gsqt    &gq         &gj         &gk         &gx     &kp LSHFT   &kp LCTRL   &layer_td  &kp LGUI  &kp RCTRL &kp RSHFT   &gb     &gm     &gw         &gv         &gz         &kp PG_UP

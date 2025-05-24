@@ -470,7 +470,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "Y_SHIFT";
             #binding-cells = <0>;
-            bindings = <&kp Y>, <&kp LS(y)>;
+            bindings = <&kp Y>, <&kp LS(Y)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 

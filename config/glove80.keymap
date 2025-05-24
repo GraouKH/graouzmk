@@ -532,6 +532,30 @@
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
+        // r
+        sr: srb {
+            compatible = "zmk,behavior-mod-morph";
+            label = "R_SHIFT";
+            #binding-cells = <0>;
+            bindings = <&kp R>, <&kp LS(R)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ar: arb {
+            compatible = "zmk,behavior-mod-morph";
+            label = "R_ALT"; 
+            #binding-cells = <0>;
+            bindings = <&kp R>, <&kp LS(R)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gr: grb {
+            compatible = "zmk,behavior-mod-morph";
+            label = "R";
+            #binding-cells = <0>;
+            bindings = <&sr>, <&ar>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
 
         // c ç
         sc: scb {

@@ -584,7 +584,7 @@
 
 
         // l
-        sl: slb {
+        sl2: slb {
             compatible = "zmk,behavior-mod-morph";
             label = "L_SHIFT";
             #binding-cells = <0>;
@@ -604,7 +604,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "L";
             #binding-cells = <0>;
-            bindings = <&sl>, <&al>;
+            bindings = <&sl2>, <&al>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 

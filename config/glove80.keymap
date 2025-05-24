@@ -374,7 +374,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SEMI_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00E1>, <&kp U00C1>;
+            bindings = <&a_accute>, <&a_accute_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -400,7 +400,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00F3>, <&kp U00D3>;
+            bindings = <&o_accute>, <&o_accute_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -426,7 +426,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "DOT_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00E9>, <&kp U00C9>;
+            bindings = <&e_accute>, <&e_accute_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -452,7 +452,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "P_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00FA>, <&kp U00DA>;
+            bindings = <&u_accute>, <&u_accute_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -478,7 +478,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "Y_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00ED>, <&kp U00CD>;
+            bindings = <&i_accute>, <&i_accute_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -556,7 +556,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "C_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00E7>, <&kp U00C7>;
+            bindings = <&c_cedil>, <&c_cedil_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -636,7 +636,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "A_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00E2>, <&kp U00C2>;
+            bindings = <&a_circ>, <&a_circ_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -663,7 +663,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "O_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00F4>, <&kp U00D4>;
+            bindings = <&o_circ>, <&o_circ_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -690,7 +690,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "E_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00EA>, <&kp U00CA>;
+            bindings = <&e_circ>, <&e_circ_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -717,7 +717,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "U_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00FB>, <&kp U00DB>;
+            bindings = <&u_circ>, <&u_circ_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -744,7 +744,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "I_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00EE>, <&kp U00CE>;
+            bindings = <&i_circ>, <&i_circ_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -771,7 +771,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "D_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00EF>, <&kp U00CF>;
+            bindings = <&i_trema>, <&i_trema_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -798,7 +798,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "H_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00FC>, <&kp U00DC>;
+            bindings = <&u_trema>, <&u_trema_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -825,37 +825,9 @@
             compatible = "zmk,behavior-mod-morph";
             label = "T_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00EB>, <&kp U00CB>;
+            bindings = <&e_trema>, <&e_trema_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
-
-
-        // 
-        gkey: gkeyb {
-            compatible = "zmk,behavior-mod-morph";
-            label = "KEY";
-            #binding-cells = <0>;
-            bindings = <&sKEYb>, <&aKEYb>;
-            mods = <(MOD_LALT|MOD_RALT)>;
-        };
-
-        skey: skeyb {
-            compatible = "zmk,behavior-mod-morph";
-            label = "KEY_SHIFT";
-            #binding-cells = <0>;
-            bindings = <&kp KEY>, <&kp LS(KEY)>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        akey: akeyb {
-            compatible = "zmk,behavior-mod-morph";
-            label = "KEY_ALT"; 
-            #binding-cells = <0>;
-            bindings = <&kp KEY>, <&kp LS(KEY)>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
 
 
         // n ö
@@ -879,7 +851,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "N_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00F6>, <&kp U00D6>;
+            bindings = <&o_trema>, <&o_trema_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -906,7 +878,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "S_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00E4>, <&kp U00C4>;
+            bindings = <&a_trema>, <&a_trema_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -985,7 +957,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SQT_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00E0>, <&kp U00C0>;
+            bindings = <&a_grave>, <&a_grave_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -1011,7 +983,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "Q_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00F2>, <&kp U00D2>;
+            bindings = <&o_grave>, <&o_grave_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -1037,7 +1009,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "J_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00E8>, <&kp U00C8>;
+            bindings = <&e_grave>, <&e_grave_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -1063,7 +1035,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "K_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00F9>, <&kp U00D9>;
+            bindings = <&u_grave>, <&u_grave_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -1089,7 +1061,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "X_ALT"; 
             #binding-cells = <0>;
-            bindings = <&kp U00EC>, <&kp U00CC>;
+            bindings = <&i_grave>, <&i_grave_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -1318,6 +1290,471 @@
             bindings
                 = <&out OUT_BLE>,
                   <&bt BT_SEL 3>;
+        };
+
+        a_accute = a_accute {
+            label = "A_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N6 &kp KP_N0>
+            , <&macro_release &kp LALT>;
+        };
+
+        a_accute_caps = a_accute_caps {
+            label = "A_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N3>
+            , <&macro_release &kp LALT>;
+        };
+
+        o_accute = o_accute {
+            label = "O_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N6 &kp KP_N2>
+            , <&macro_release &kp LALT>;
+        };
+
+        o_accute_caps = o_accute_caps {
+            label = "O_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N1>
+            , <&macro_release &kp LALT>;
+        };
+
+        e_accute = e_accute {
+            label = "E_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N3 &kp KP_N0>
+            , <&macro_release &kp LALT>;
+        };
+
+        e_accute_caps = e_accute_caps {
+            label = "E_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N4 &kp KP_N4>
+            , <&macro_release &kp LALT>;
+        };
+
+        u_accute = u_accute {
+            label = "U_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N6 &kp KP_N3>
+            , <&macro_release &kp LALT>;
+        };
+
+        u_accute_caps = u_accute_caps {
+            label = "U_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N7>
+            , <&macro_release &kp LALT>;
+        };
+
+        i_accute = i_accute {
+            label = "I_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N6 &kp KP_N1>
+            , <&macro_release &kp LALT>;
+        };
+
+        i_accute_caps = i_accute_caps {
+            label = "I_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N5>
+            , <&macro_release &kp LALT>;
+        };
+
+
+        a_grave = a_grave {
+            label = "A_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N3 &kp KP_N3>
+            , <&macro_release &kp LALT>;
+        };
+
+        a_grave_caps = a_grave_caps {
+            label = "A_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N2>
+            , <&macro_release &kp LALT>;
+        };
+
+        o_grave = o_grave {
+            label = "O_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N4 &kp KP_N9>
+            , <&macro_release &kp LALT>;
+        };
+
+        o_grave_caps = o_grave_caps {
+            label = "O_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N0>
+            , <&macro_release &kp LALT>;
+        };
+
+        e_grave = e_grave {
+            label = "E_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N3 &kp KP_N8>
+            , <&macro_release &kp LALT>;
+        };
+
+        e_grave_caps = e_grave_caps {
+            label = "E_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 KP_N0>
+            , <&macro_release &kp LALT>;
+        };
+
+        u_grave = u_grave {
+            label = "U_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N5 &kp KP_N1>
+            , <&macro_release &kp LALT>;
+        };
+
+        u_grave_caps = u_grave_caps {
+            label = "U_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N7>
+            , <&macro_release &kp LALT>;
+        };
+
+        i_grave = i_grave {
+            label = "I_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N4 &kp KP_N1>
+            , <&macro_release &kp LALT>;
+        };
+
+        i_grave_caps = i_grave_caps {
+            label = "I_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N4>
+            , <&macro_release &kp LALT>;
+        };
+
+
+        a_circ = a_circ {
+            label = "A_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N3 &kp KP_N1>
+            , <&macro_release &kp LALT>;
+        };
+
+        a_circ_caps = a_circ_caps {
+            label = "A_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N9 &kp KP_N4>
+            , <&macro_release &kp LALT>;
+        };
+
+        o_circ = o_circ {
+            label = "O_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N4 &kp KP_N7>
+            , <&macro_release &kp LALT>;
+        };
+
+        o_circ_caps = o_circ_caps {
+            label = "O_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N2 &kp KP_N1 &kp KP_N2>
+            , <&macro_release &kp LALT>;
+        };
+
+        e_circ = e_circ {
+            label = "E_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N3 &kp KP_N6>
+            , <&macro_release &kp LALT>;
+        };
+
+        e_circ_caps = e_circ_caps {
+            label = "E_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N2 &kp KP_N0 &kp KP_N2>
+            , <&macro_release &kp LALT>;
+        };
+
+        u_circ = u_circ {
+            label = "U_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N5 &kp KP_N0>
+            , <&macro_release &kp LALT>;
+        };
+
+        u_circ_caps = u_circ_caps {
+            label = "U_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N9>
+            , <&macro_release &kp LALT>;
+        };
+
+        i_circ = i_circ {
+            label = "I_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N4 &kp KP_N0>
+            , <&macro_release &kp LALT>;
+        };
+
+        i_circ_caps = i_circ_caps {
+            label = "I_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N6>
+            , <&macro_release &kp LALT>;
+        };
+
+
+        a_trema = a_trema {
+            label = "A_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N3 &kp KP_N2>
+            , <&macro_release &kp LALT>;
+        };
+
+        a_trema_caps = a_trema_caps {
+            label = "A_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N4 &kp KP_N2>
+            , <&macro_release &kp LALT>;
+        };
+
+        o_trema = o_trema {
+            label = "O_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N4 &kp KP_N8>
+            , <&macro_release &kp LALT>;
+        };
+
+        o_trema_caps = o_trema_caps {
+            label = "O_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N5 &kp KP_N3>
+            , <&macro_release &kp LALT>;
+        };
+
+        e_trema = e_trema {
+            label = "E_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N3 &kp KP_N7>
+            , <&macro_release &kp LALT>;
+        };
+
+        e_trema_caps = e_trema_caps {
+            label = "E_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N2 &kp KP_N0 &kp KP_N3>
+            , <&macro_release &kp LALT>;
+        };
+
+        u_trema = u_trema {
+            label = "U_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N2 &kp KP_N9>
+            , <&macro_release &kp LALT>;
+        };
+
+        u_trema_caps = u_trema_caps {
+            label = "U_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N5 &kp KP_N4>
+            , <&macro_release &kp LALT>;
+        };
+
+        i_trema = i_trema {
+            label = "I_ACCUTE";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N3 &kp KP_N9>
+            , <&macro_release &kp LALT>;
+        };
+
+        i_trema_caps = i_trema_caps {
+            label = "I_ACCUTE_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N0 &kp KP_N7>
+            , <&macro_release &kp LALT>;
+        };
+
+        c_cedil = c_cedil {
+            label = "C_CEDIL";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N3 &kp KP_N5>
+            , <&macro_release &kp LALT>;
+        };
+
+        c_cedil_caps = c_cedil_caps {
+            label = "C_CEDIL_CAPS";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+            = <&macro_press   &kp LALT>
+            , <&macro_tap     &kp KP_N1 &kp KP_N2 &kp KP_N8>
+            , <&macro_release &kp LALT>;
         };
     };
 

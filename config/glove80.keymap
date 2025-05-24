@@ -61,7 +61,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "HASH";
             #binding-cells = <0>;
-            bindings = <&shashb>, <&ahashb>;
+            bindings = <&shash>, <&ahash>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -87,7 +87,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "AMPS";
             #binding-cells = <0>;
-            bindings = <&sampsb>, <&aampsb>;
+            bindings = <&samps>, <&aamps>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -113,7 +113,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "LBKT";
             #binding-cells = <0>;
-            bindings = <&slbktb>, <&albktb>;
+            bindings = <&slbkt>, <&albkt>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -139,7 +139,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "LBRC";
             #binding-cells = <0>;
-            bindings = <&slbrcb>, <&albrcb>;
+            bindings = <&slbrc>, <&albrc>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -165,7 +165,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "RBRC";
             #binding-cells = <0>;
-            bindings = <&srbrcb>, <&arbrcb>;
+            bindings = <&srbrc>, <&arbrc>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -191,7 +191,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "LPAR";
             #binding-cells = <0>;
-            bindings = <&slparb>, <&alparb>;
+            bindings = <&slpar>, <&alpar>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -217,7 +217,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "EQUAL";
             #binding-cells = <0>;
-            bindings = <&sequalb>, <&aequalb>;
+            bindings = <&sequal>, <&aequal>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -243,7 +243,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "STAR";
             #binding-cells = <0>;
-            bindings = <&sstarb>, <&astarb>;
+            bindings = <&sstar>, <&astar>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -268,7 +268,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "RPAR";
             #binding-cells = <0>;
-            bindings = <&srparb>, <&arparb>;
+            bindings = <&srpar>, <&arpar>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -294,7 +294,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "PLUS";
             #binding-cells = <0>;
-            bindings = <&splusb>, <&aplusb>;
+            bindings = <&splus>, <&aplus>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -320,7 +320,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "RBKT";
             #binding-cells = <0>;
-            bindings = <&srbktb>, <&arbktb>;
+            bindings = <&srbkt>, <&arbkt>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -346,7 +346,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "EXCL";
             #binding-cells = <0>;
-            bindings = <&sexclb>, <&aexclb>;
+            bindings = <&sexcl>, <&aexcl>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -372,7 +372,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SEMI";
             #binding-cells = <0>;
-            bindings = <&ssemib>, <&asemib>;
+            bindings = <&ssemi>, <&asemi>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -398,7 +398,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA";
             #binding-cells = <0>;
-            bindings = <&scommab>, <&acommab>;
+            bindings = <&scomma>, <&acomma>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -424,7 +424,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "DOT";
             #binding-cells = <0>;
-            bindings = <&sdotb>, <&adotb>;
+            bindings = <&sdot>, <&adot>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -450,7 +450,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "P";
             #binding-cells = <0>;
-            bindings = <&spb>, <&apb>;
+            bindings = <&sp>, <&ap>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -476,7 +476,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "Y";
             #binding-cells = <0>;
-            bindings = <&syb>, <&ayb>;
+            bindings = <&sy>, <&ay>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -502,7 +502,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "F";
             #binding-cells = <0>;
-            bindings = <&sfb>, <&afb>;
+            bindings = <&sf>, <&af>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -528,7 +528,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "G";
             #binding-cells = <0>;
-            bindings = <&sgb>, <&agb>;
+            bindings = <&sg>, <&ag>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -554,7 +554,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "C";
             #binding-cells = <0>;
-            bindings = <&scb>, <&acb>;
+            bindings = <&sc>, <&ac>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -580,7 +580,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "L";
             #binding-cells = <0>;
-            bindings = <&slb>, <&alb>;
+            bindings = <&sl>, <&al>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -606,7 +606,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BSLH";
             #binding-cells = <0>;
-            bindings = <&sbslhb>, <&abslhb>;
+            bindings = <&sbslh>, <&abslh>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -632,7 +632,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "A";
             #binding-cells = <0>;
-            bindings = <&sab>, <&aab>;
+            bindings = <&sa>, <&aa>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -658,7 +658,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "O";
             #binding-cells = <0>;
-            bindings = <&sob>, <&aob>;
+            bindings = <&so>, <&ao>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -684,7 +684,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "E";
             #binding-cells = <0>;
-            bindings = <&seb>, <&aeb>;
+            bindings = <&se>, <&ae>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -710,7 +710,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "U";
             #binding-cells = <0>;
-            bindings = <&sub>, <&aub>;
+            bindings = <&su>, <&au>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -736,7 +736,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "I";
             #binding-cells = <0>;
-            bindings = <&sib>, <&aib>;
+            bindings = <&si>, <&ai>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -762,7 +762,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "D";
             #binding-cells = <0>;
-            bindings = <&sdb>, <&adb>;
+            bindings = <&sd>, <&ad>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -788,7 +788,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "H";
             #binding-cells = <0>;
-            bindings = <&shb>, <&ahb>;
+            bindings = <&sh>, <&ah>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -814,7 +814,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "T";
             #binding-cells = <0>;
-            bindings = <&stb>, <&atb>;
+            bindings = <&st>, <&at>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -840,7 +840,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "N";
             #binding-cells = <0>;
-            bindings = <&snb>, <&anb>;
+            bindings = <&sn>, <&an>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -866,7 +866,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "S";
             #binding-cells = <0>;
-            bindings = <&ssb>, <&asb>;
+            bindings = <&ss>, <&as>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -892,7 +892,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "MINUS";
             #binding-cells = <0>;
-            bindings = <&sminusb>, <&aminusb>;
+            bindings = <&sminus>, <&aminus>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -918,7 +918,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "DLLR";
             #binding-cells = <0>;
-            bindings = <&sdllrb>, <&adllrb>;
+            bindings = <&sdllr>, <&adllr>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -944,7 +944,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SQT";
             #binding-cells = <0>;
-            bindings = <&ssqtb>, <&asqtb>;
+            bindings = <&ssqt>, <&asqt>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -970,7 +970,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "Q";
             #binding-cells = <0>;
-            bindings = <&sqb>, <&aqb>;
+            bindings = <&sq>, <&aq>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -996,7 +996,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "J";
             #binding-cells = <0>;
-            bindings = <&sjb>, <&ajb>;
+            bindings = <&sj>, <&aj>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -1022,7 +1022,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "K";
             #binding-cells = <0>;
-            bindings = <&skb>, <&akb>;
+            bindings = <&sk>, <&ak>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -1048,7 +1048,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "X";
             #binding-cells = <0>;
-            bindings = <&sxb>, <&axb>;
+            bindings = <&sx>, <&ax>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -1074,7 +1074,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "B";
             #binding-cells = <0>;
-            bindings = <&sbb>, <&abb>;
+            bindings = <&sb>, <&ab>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -1100,7 +1100,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "M";
             #binding-cells = <0>;
-            bindings = <&smb>, <&amb>;
+            bindings = <&sm>, <&am>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -1126,7 +1126,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "W";
             #binding-cells = <0>;
-            bindings = <&swb>, <&awb>;
+            bindings = <&sw>, <&aw>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -1152,7 +1152,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "V";
             #binding-cells = <0>;
-            bindings = <&svb>, <&avb>;
+            bindings = <&sv>, <&av>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -1177,7 +1177,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "Z";
             #binding-cells = <0>;
-            bindings = <&szb>, <&azb>;
+            bindings = <&sz>, <&az>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -1203,7 +1203,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "FSLH";
             #binding-cells = <0>;
-            bindings = <&sfslhb>, <&afslhb>;
+            bindings = <&sfslh>, <&afslh>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
@@ -1228,7 +1228,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "AT";
             #binding-cells = <0>;
-            bindings = <&satb>, <&aatb>;
+            bindings = <&sat>, <&aat>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
     };

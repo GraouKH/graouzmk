@@ -631,7 +631,7 @@
         ae: aeb {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&euro_sign>, <&e_circ_caps>;
+            bindings = <&e_circ>, <&e_circ_caps>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 

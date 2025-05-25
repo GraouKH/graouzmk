@@ -1636,10 +1636,11 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             // |   `   |  Z  |  X  |  C   |  V   |  B   | LSHFT | LCTRL | LOWER | | LGUI  | RCTRL | RSHFT |  N   |   M   |   ,   |  .   |   /   | PGUP |
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
+            // &kp TAB        &gsemi   &gcomma     &gdot       &gp         &gy                                                                        &gf     &gg     &gc         &gr         &gl         &gbslh
             bindings = <
             &kp F1         &kp F2   &kp F3      &kp F4      &kp F5                                                                                         &kp F6  &kp F7      &kp F8      &kp F9      &kp F10
             &ghash         &gamps   &glbkt      &glbrc      &grbrc      &glpar                                                                     &gequal &gstar  &grpar      &gplus      &grbkt      &gexcl
-            &kp TAB        &gsemi   &gcomma     &gdot       &gp         &gy                                                                        &gf     &gg     &gc         &gr         &gl         &gbslh
+            &kp TAB        &gsemi   &gcomma     &gdot       &gp         &gy                                                                        &gf     &gg     &gc         &gr         &o_accute   &gbslh
             &kp ESC        &ga      &go         &ge         &gu         &gi                                                                        &gd     &gh     &gt         &gn         &gs         &gminus
             &gdllr         &gsqt    &gq         &gj         &gk         &gx     &kp LSHFT   &kp LCTRL   &layer_td  &kp LGUI  &kp RCTRL &kp RSHFT   &gb     &gm     &gw         &gv         &gz         &kp PG_UP
             &magic MAGIC 0 &kp HOME &kp END     &kp LEFT    &kp RIGHT           &kp BSPC    &kp DEL     &kp LALT   &kp RALT  &kp RET   &kp SPACE           &kp UP  &kp DOWN    &gfslh      &gat        &kp PG_DN

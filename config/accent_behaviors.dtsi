@@ -1,0 +1,1083 @@
+/ {
+    behavior {
+        // # ` HASH GRAVE
+        shash: shashb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp HASH>, <&kp GRAVE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ahash: ahashb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp HASH>, <&kp GRAVE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ghash: ghashb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&shash>, <&ahash>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        // & % AMPS N1
+        samps: sampsb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp AMPS>, <&kp N1>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        aamps: aampsb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp AMPS>, <&kp N1>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gamps: gampsb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&samps>, <&aamps>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // [ 2 LBKT N2
+        slbkt: slbktb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT>, <&kp N2>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        albkt: albktb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT>, <&kp N2>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        glbkt: glbktb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&slbkt>, <&albkt>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // { 3 LBRC N3
+        slbrc: slbrcb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC>, <&kp N3>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        albrc: albrcb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC>, <&kp N3>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        glbrc: glbrcb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&slbrc>, <&albrc>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // } 4 RBRC N4
+        srbrc: srbrcb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RBRC>, <&kp N4>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        arbrc: arbrcb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RBRC>, <&kp N4>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        grbrc: grbrcb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&srbrc>, <&arbrc>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // ( 5 LPAR N5
+        slpar: slparb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR>, <&kp N5>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        alpar: alparb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR>, <&kp N5>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        glpar: glparb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&slpar>, <&alpar>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // = 6 EQUAL N6
+        sequal: sequalb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&kp N6>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        aequal: aequalb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&kp N6>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gequal: gequalb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sequal>, <&aequal>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // * 7 STAR N7
+        sstar: sstarb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp STAR>, <&kp N7>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        astar: astarb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp STAR>, <&kp N7>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gstar: gstarb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sstar>, <&astar>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        // ) 8 RPAR N8
+        srpar: srparb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RPAR>, <&kp N8>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        arpar: arparb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RPAR>, <&kp N8>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        grpar: grparb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&srpar>, <&arpar>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // + 9 PLUS N9
+        splus: splusb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PLUS>, <&kp N9>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        aplus: aplusb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PLUS>, <&kp N9>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gplus: gplusb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&splus>, <&aplus>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // ] 0 RBKT N0
+        srbkt: srbktb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RBKT>, <&kp N0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        arbkt: arbktb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RBKT>, <&kp N0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        grbkt: grbktb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&srbkt>, <&arbkt>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // ! % EXCL PRCNT
+        sexcl: sexclb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp EXCL>, <&kp PRCNT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        aexcl: aexclb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp EXCL>, <&kp PRCNT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gexcl: gexclb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sexcl>, <&aexcl>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // ; : SEMI COLON á
+        ssemi: ssemib {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SEMI>, <&kp COLON>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        asemi: asemib {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&a_accute>, <&a_accute_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gsemi: gsemib {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&ssemi>, <&asemi>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // , < COMMA LT ó
+        scomma: scommab {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp LT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        acomma: acommab {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&o_accute>, <&o_accute_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gcomma: gcommab {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            bindings = <&acomma>, <&scomma>;
+        };
+
+        // . > DOT GT é
+        sdot: sdotb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp GT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        adot: adotb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&e_accute>, <&e_accute_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gdot: gdotb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sdot>, <&adot>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // p ú
+        sp: spb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp P>, <&kp LS(P)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ap: apb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&u_accute>, <&u_accute_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gp: gpb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sp>, <&ap>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // y í
+        sy: syb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp Y>, <&kp LS(Y)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ay: ayb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&i_accute>, <&i_accute_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gy: gyb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sy>, <&ay>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // f
+        sf: sfb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F>, <&kp LS(F)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        af: afb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F>, <&kp LS(F)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gf: gfb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sf>, <&af>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // g
+        sg: sgb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp G>, <&kp LS(G)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ag: agb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp G>, <&kp LS(G)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gg: ggb {
+            compatible = "zmk,behavior-mod-morph";
+            label = "G";
+            #binding-cells = <0>;
+            bindings = <&sg>, <&ag>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        // r
+        sr: srb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp R>, <&kp LS(R)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ar: arb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp R>, <&kp LS(R)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gr: grb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sr>, <&ar>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        // c ç
+        sc: scb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp C>, <&kp LS(C)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ac: acb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&c_cedil>, <&c_cedil_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gc: gcb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sc>, <&ac>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // l
+        sl2: slb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp L>, <&kp LS(L)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        al: alb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp L>, <&kp LS(L)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gl: glb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sl2>, <&al>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // \ | bslh pipe
+        sbslh: sbslhb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH>, <&kp PIPE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        abslh: abslhb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BSLH>, <&kp PIPE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gbslh: gbslhb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sbslh>, <&abslh>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // a â
+        sa: sab {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&kp LS(A)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        aa: aab {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&a_circ>, <&a_circ_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ga: gab {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sa>, <&aa>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // o ô
+        so: sob {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp O>, <&kp LS(O)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ao: aob {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&o_circ>, <&o_circ_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        go: gob {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&so>, <&ao>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // e ê
+        se: seb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp E>, <&kp LS(E)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ae: aeb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&e_circ>, <&e_circ_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ge: geb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&se>, <&ae>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // u û
+        su: sub {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&kp LS(U)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        au: aub {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&u_circ>, <&u_circ_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gu: gub {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&su>, <&au>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // i î 
+        si: sib {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp I>, <&kp LS(I)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ai: aib {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&i_circ>, <&i_circ_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gi: gib {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&si>, <&ai>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // d ï
+        sd: sdb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp D>, <&kp LS(D)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ad: adb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&i_trema>, <&i_trema_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gd: gdb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sd>, <&ad>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // h ü
+        sh: shb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp H>, <&kp LS(H)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ah: ahb {
+            compatible = "zmk,behavior-mod-morph";
+            label = "H_ALT"; 
+            #binding-cells = <0>;
+            bindings = <&u_trema>, <&u_trema_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gh: ghb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sh>, <&ah>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // t ë
+        st: stb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp T>, <&kp LS(T)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        at: atb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&e_trema>, <&e_trema_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gt: gtb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&st>, <&at>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // n ö
+        sn: snb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N>, <&kp LS(N)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        an: anb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&o_trema>, <&o_trema_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gn: gnb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sn>, <&an>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // s ä
+        ss: ssb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp S>, <&kp LS(S)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        as: asb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&a_trema>, <&a_trema_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gs: gsb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&ss>, <&as>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // - _ MINUS UNDER
+        sminus: sminusb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp UNDER>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        aminus: aminusb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp UNDER>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gminus: gminusb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sminus>, <&aminus>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // $ ~ DLLR TILDE
+        sdllr: sdllrb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DLLR>, <&kp TILDE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        adllr: adllrb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DLLR>, <&kp TILDE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gdllr: gdllrb {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DLLR";
+            #binding-cells = <0>;
+            bindings = <&sdllr>, <&adllr>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // ' " SQT DQT à
+        ssqt: ssqtb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp DQT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        asqt: asqtb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&a_grave>, <&a_grave_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gsqt: gsqtb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&ssqt>, <&asqt>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // q ò
+        sq: sqb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp Q>, <&kp LS(Q)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        aq: aqb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&o_grave>, <&o_grave_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gq: gqb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sq>, <&aq>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // j è
+        sj: sjb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp J>, <&kp LS(J)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        aj: ajb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&e_grave>, <&e_grave_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gj: gjb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sj>, <&aj>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // k ù
+        sk2: skb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp K>, <&kp LS(K)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ak: akb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&u_grave>, <&u_grave_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gk: gkb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sk2>, <&ak>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // x ì
+        sx: sxb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp X>, <&kp LS(X)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ax: axb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&i_grave>, <&i_grave_caps>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gx: gxb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sx>, <&ax>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // b
+        sb: sbb {
+            compatible = "zmk,behavior-mod-morph";
+            label = "B_SHIFT";
+            #binding-cells = <0>;
+            bindings = <&kp B>, <&kp LS(B)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        ab: abb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp B>, <&kp B>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gb: gbb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sb>, <&ab>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // m
+        sm: smb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp M>, <&kp LS(M)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        am: amb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp M>, <&kp M>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gm: gmb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sm>, <&am>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // w
+        sw: swb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp W>, <&kp LS(W)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        aw: awb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp W>, <&kp W>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gw: gwb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sw>, <&aw>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // v
+        sv: svb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp V>, <&kp LS(V)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        av: avb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp V>, <&kp V>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gv: gvb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sv>, <&av>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+        // z
+        sz: szb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp Z>, <&kp LS(Z)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        az: azb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp Z>, <&kp Z>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gz: gzb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sz>, <&az>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // / ? FSLH QMARK
+        sfslh: sfslhb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>, <&kp QMARK>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        afslh: afslhb {
+            compatible = "zmk,behavior-mod-morph";
+            label = "FSLH_ALT"; 
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>, <&kp QMARK>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        gfslh: gfslhb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sfslh>, <&afslh>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+        // @ ^ AT CARET
+        sat: satb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp AT>, <&kp CARET>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        aat: aatb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp AT>, <&kp CARET>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        gat: gatb {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sat>, <&aat>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+    };
+};

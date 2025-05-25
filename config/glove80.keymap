@@ -358,6 +358,16 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             tapping-term-ms = <200>;
             bindings = <&scomma>, <&acomma>;
         };
+
+        alt_comma: alt_comma {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            bindings = <&o_accute>, <&scomma>;
+        };
+
         gcomma: gcommab {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -1644,7 +1654,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
             bindings = <
             &kp F1         &kp F2   &kp F3      &kp F4      &kp F5                                                                                         &kp F6  &kp F7      &kp F8      &kp F9      &kp F10
             &ghash         &gamps   &glbkt      &glbrc      &grbrc      &glpar                                                                     &gequal &gstar  &grpar      &gplus      &grbkt      &gexcl
-            &kp TAB        &gsemi   &alt_dance  &gdot       &gp         &gy                                                                        &gf     &gg     &gc         &gr         &gl         &gbslh
+            &kp TAB        &gsemi   &alt_comma  &gdot       &gp         &gy                                                                        &gf     &gg     &gc         &gr         &gl         &gbslh
             &kp ESC        &ga      &go         &ge         &gu         &gi                                                                        &gd     &gh     &gt         &gn         &gs         &gminus
             &gdllr         &gsqt    &gq         &gj         &gk         &gx     &kp LSHFT   &kp LCTRL   &layer_td  &kp LGUI  &kp RCTRL &kp RSHFT   &gb     &gm     &gw         &gv         &gz         &kp PG_UP
             &magic MAGIC 0 &kp HOME &kp END     &kp LEFT    &kp RIGHT           &kp BSPC    &kp DEL     &kp LALT   &kp RALT  &kp RET   &kp SPACE           &kp UP  &kp DOWN    &gfslh      &gat        &kp PG_DN
